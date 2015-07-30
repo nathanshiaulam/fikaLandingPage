@@ -11,10 +11,10 @@
 		<div id="cover">
 			<div class="overlay">
 
-				<img class="center-image" src="{{ url_for('static', filename='img/logo.png') }}">
+				<img class="wow fadeInDown center-image" src="{{ url_for('static', filename='img/logo.png') }}">
 				<div class="container">
 					<div class="main-header-box">
-						<h1 class="center-text header main-header">Grab a fika, grow your network</h1>
+						<h1 class="wow fadeInDown center-text header main-header" data-wow-delay=".5s">Grab a fika, grow your network</h1>
 					
 					</div>
 				</div>
@@ -36,6 +36,7 @@
 							<p>{{ message }}></p>
 						</div>
 					{% endfor %} -->
+				<div class="wow fadeInDown" data-wow-delay="1s">
 					<div class="sub-header-box">
 						<h3 class="center-text header sub-header">We help you meet cool young professionals nearby, because we believe every conversation should count.</h3>
 						<h3 class="center-text header sub-header">Sign up for our iOS TestFlight and gain exclusive access to the community: </h3>
@@ -45,6 +46,7 @@
 					    	{{ form.email(placeholder="Email", class="email") }}
 					    	{{ form.submit(class="btn") }}
 					   </form>  
+				</div>
 				{% endif %}
 			</div>
 		</div>
@@ -52,7 +54,8 @@
 	</body>
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
 	<script>
-
+	 new WOW().init();
 	</script>
 </html>
