@@ -98,4 +98,31 @@ span.blue {
 }
 .btn:focus {outline:none !important;}
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .center-image {
+        display: block;
+        margin: auto;
+        height: 25%;
+        min-height: 300px;
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+    .main-header {
+        font-size: 7em;
+    }
+    .sub-header {
+        margin: 0;
+        padding-bottom: 10%;
+        font-size: 3em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .pure-form input.email { 
+        width: 45%;
+    }
+    .pure-form .btn {
+        width: 15%;
+    }
+}
+
 
